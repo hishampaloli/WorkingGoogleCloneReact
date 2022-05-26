@@ -1,0 +1,156 @@
+
+.shop-div {
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    margin: 25px;
+    width: 240px;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.shop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.up {
+    height: 75%;
+    border-bottom: 1px solid lightgray;
+    overflow-y: hidden;
+    padding: 15px;
+}
+
+.up img {
+    width: 100%;
+    height: 75%;
+}
+
+.up a {
+    font-family: 'Google Sans','GoogleSans-Local',Roboto,Arial,Sans-Serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #202124;
+    text-decoration: none;
+}
+
+.shop-down{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.shop-down h3 {
+    color: #202124;
+    margin-right: 4px;
+    font-size: 16px;
+    font-family: 'Google Sans Bold', 'Google Sans', 'GoogleSans-Local-Bold','Roboto-Bold','HelveticaNeue-Bold',HelveticaNeue,Sans-Serif-Bold,Arial,Sans-Serif;
+    font-weight: bold;
+}
+
+.shop-down a {
+    letter-spacing: 0.2px;
+    overflow: hidden;
+    font-size: 14px;
+    text-decoration: none;
+    color: #1967d2;
+    line-height: 22px;
+    font-family: Roboto,Arial,Sans-Serif;
+}
+
+.shop-down p {
+    line-height: 22px;
+    font-size: 14px;
+    font-family: Roboto,Arial,Sans-Serif;
+    color: #70757a;
+}
+.main-bo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 30px;
+}
+
+.left-bo {
+    width: 20%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstbox {
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 10px 20px;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.first-f {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.show-btn{
+    display: none;
+}
+
+.co {
+    margin-top: 10px;
+}
+
+.firstbox input {
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.firstbox label {
+    color: #757575;
+    line-height: 20px;
+    font-size: 13px;
+
+}
+
+@media (max-width:700px) {
+    .shop-div{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+    .shop {
+       align-items: center;
+       justify-content: center;
+       margin-left: 0;
+       width: 100%;
+    }
+    
+    .left-bo{
+        width: 200px;
+        transform: translateX(-200px);
+        display: none;
+        transition: transform 1s ease;
+    }
+
+    .show-btn {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        color: #70757a;
+        margin-top: 30px;
+        overflow: hidden;
+    }
+
+    .show-ic:hover{
+        transform: scale(1.1);
+        color: black;
+        transition: .5s ease;
+    }
+
+    .show {
+        display: flex;
+        transform: translateX(0px);
+
+    }
+}
