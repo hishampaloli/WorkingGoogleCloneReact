@@ -4,8 +4,8 @@ import axios from 'axios';
 import response from "./response";
 
 
-const CONTEXT_KEY = "a67fff504754dd9ad"
-const API_KEY = 'AIzaSyB9ND-BvOEeNJzia6hjQ7YnCAjyfn-BKqM'
+const CONTEXT_KEY = "hi bro"
+const API_KEY = 'im Not A Fool'
 
 
 const useGoogleSearch =(term) => {
